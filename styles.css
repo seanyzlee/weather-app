@@ -1,0 +1,148 @@
+body{
+    zoom:0%;
+    height: 100px;
+    padding: 50px;
+    position:relative;
+    bottom:50px;
+    background-position: center;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+
+.background{
+ 
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 2cm;
+    border-radius: 2cm;
+    border-color: whitesmoke;
+    border-style: groove;
+    background-color: whitesmoke            ;
+    filter:drop-shadow(10px);
+}
+
+.paragraph{
+    color: black;
+    font-size: 50px;
+    font-style:bold;
+    position:relative;
+    left:50px;
+   
+}
+
+
+.form__group {
+  position: relative;
+  left:50px;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, black,whitesmoke);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+#submit{
+    position:relative;
+    top: 20px;
+    left:50px;
+    height:25px;
+    width:100px;
+    padding: 0px;
+    background-color:whitesmoke;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    list-style: none;
+  }
+
+.city{
+    position: relative;
+    left:50px;
+    top: 75px;
+}
+
+
+@media screen and (min-width:3000px) {
+    .form__group {
+        width:100%;
+      }
+      
+}
+
+.weather{
+    position:relative;
+    font-size:25px;
+    top:50px;
+    left:50px;
+   
+}
+ .city{
+        position:absolute;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        transform: translate(55px, -108px);
+
+        
+    }

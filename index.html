@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+  <![endif]-->
+  <!--[if IE 7]>         
+  <html class="no-js lt-ie9 lt-ie8">
+    <![endif]-->
+    <!--[if IE 8]>         
+    <html class="no-js lt-ie9">
+      <![endif]-->
+      <!--[if gt IE 8]>      
+      <html class="no-js">
+        <!--<![endif]-->
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title></title>
+            <meta name="description" content="A simple weather app showing temperatures around the world!">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles.css">
+          </head>
+          <body>
+            <div class="background">
+              <h1 id="header">
+                Weather App
+              </h1>
+              <p class="paragraph">Show <strong>temperature</strong> of a given city based on user's input</p>
+              <div class="cityform">
+                <form>
+                  <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="City Name" name='name' id='name' required/>
+                    <label for="name" class="form__label">City Name</label>
+                  </div>
+                  <input type="button" id="submit" value="Submit">
+                  <input type="reset" id="submit" value="Reset">
+                </form>
+              </div>
+              <div class="weather loading">
+                <h2 class="city" id="city">
+                Weather in Lagos</h1>
+                <h2 class="temp" id="temp">
+                51°C</h1>
+                <div class="flex">
+                  <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon">
+                  <div class="description" id="description">Cloudy</div>
+                </div>
+                <div class="humidity" id="humidity">Humidity:60%</div>
+                <div class="wind" id="wind">Wind Speed: 6.2 km/hr</div>
+              </div>
+            </div>
+            </div>
+            <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <script src="script.js" async defer></script>
+          </body>
+        </html>
